@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h3>You're in a BASIC DICTIONARY mode</h3>
+  <br>
+  <form method="POST">
+	  {{ form.entry.label }}{{ form.entry }}
+	  <br><br><br>
+	  <label>Here are possible translations: {{ translation }}</label>
+  </form>
+{% endblock %}
